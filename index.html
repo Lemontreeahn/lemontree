@@ -123,6 +123,12 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:17px;width:2
   display:flex;align-items:center;justify-content:center}
 ol.steps b{font-family:'Gowun Batang',serif;font-size:1.02rem;display:block}
 ol.steps span{color:var(--pencil);font-size:.88rem}
+#growth figure{margin:24px 0 8px}
+#growth img{width:100%;height:auto;border-radius:6px;display:block;
+  box-shadow:0 4px 22px rgba(35,33,32,.10)}
+#growth figcaption{font-size:.82rem;color:#A9A39B;margin-top:10px;line-height:1.7}
+#growth .kicker{font-family:'Gowun Batang',serif;font-size:1.02rem;color:var(--ink);
+  margin-top:26px}
 dl.facts dt{font-family:'Gowun Batang',serif;font-weight:700;font-size:1rem;margin-top:23px}
 dl.facts dt:first-child{margin-top:0}
 dl.facts dd{color:var(--pencil);font-size:.88rem;margin-top:2px}
@@ -205,6 +211,20 @@ footer{padding:34px 0 58px;color:var(--pencil);font-size:.8rem;line-height:1.9;b
   <p>미술을 배우지 않는다고 아이가 그림을 안 그리는 건 아닙니다. 아이들은 계속 그립니다. 다만 혼자 그립니다.</p>
   <p>머릿속에는 분명히 있는데 손으로는 안 나옵니다. 몇 번 안 되니까 “나는 못 그려”라고 스스로 정해 버립니다. 그다음부터는 그리지 않습니다.</p>
   <p class="note">재능이 없어서가 아니라, 방법을 배운 적이 없어서입니다.</p>
+</section>
+
+<section id="growth">
+  <h2>8살에 온 아이가<br>지금 11살입니다</h2>
+  <p>처음 그린 것은 자기 얼굴 하나였습니다. 3년 6개월이 지난 지금 그리는 그림을 나란히 놓아 봤습니다.</p>
+  <figure>
+    <img src="beforeafter.jpg" alt="같은 아이가 8살과 11살에 그린 그림 비교" loading="lazy">
+  </figure>
+  <p class="kicker">재능이 달라진 게 아닙니다. 방법을 배운 것입니다.</p>
+  <figure>
+    <img src="grid.jpg" alt="한 아이가 3년 6개월간 그린 작품 17점" loading="lazy">
+    <figcaption>한 아이의 작품 17점 · 2023년 3월 ~ 2026년 9월<br>
+    작품을 완성할 때마다 사진으로 기록해 왔습니다. 아이 얼굴과 이름 없이 작품만 올립니다.</figcaption>
+  </figure>
 </section>
 
 <section id="q3">
@@ -437,6 +457,7 @@ gate.addEventListener('wheel',function(e){if(e.deltaY>20)openDoor();},{passive:t
 var QA=[
  {q:"초등 1·2학년은 학교에서 미술 안 배우나요?",k:"초등 1학년 2학년 학교 교과 미술 시간표 즐거운생활 교육과정",t:"q1"},
  {q:"아이가 못 그린다고 안 그리려고 해요",k:"못그려 못그린다 안그려 안그린다 자신감 포기 싫어 흥미 낙서",t:"q2"},
+ {q:"실제로 얼마나 달라지나요?",k:"성장 변화 실력 결과 얼마나 달라 효과 발전",t:"growth"},
  {q:"낙서랑 그림은 뭐가 다른가요?",k:"낙서 그림 차이 단계 순서 실력",t:"q3"},
  {q:"몇 살부터 다닐 수 있나요?",k:"몇살 나이 유아 5세 6세 7세 예비초등 시작 언제 대상",t:"q5"},
  {q:"중학생·고등학생도 되나요?",k:"중학생 고등학생 중등 고등 성인 어른 일반 학부모 대상",t:"q5"},
